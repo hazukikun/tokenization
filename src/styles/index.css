@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap");
+@import './tailwind.css';
+
+/*
+  ВАЖНО: компоненты используют Tailwind-классы вида font-['MTS_Wide:Medium'].
+  Tailwind заменяет "_" на пробел, поэтому реально запрашивается семейство
+  "MTS Wide:Medium" (с пробелом). Имена @font-face ниже должны точно совпадать.
+*/
+
+@font-face {
+  font-family: "MTS Compact:Regular";
+  src: local("MTS Compact Regular"), local("MTSCompact-Regular"),
+    url("./fonts/MTSCompact-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Compact:Medium";
+  src: local("MTS Compact Medium"), local("MTSCompact-Medium"),
+    url("./fonts/MTSCompact-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Wide:Medium";
+  src: local("MTS Wide Medium"), local("MTSWide-Medium"),
+    url("./fonts/MTSWide-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Wide:Bold";
+  src: local("MTS Wide Bold"), local("MTSWide-Bold"),
+    url("./fonts/MTSWide-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* MTS Sans не поставляется отдельным файлом — используем MTS Text как замену */
+@font-face {
+  font-family: "MTS Sans:Regular";
+  src: local("MTS Sans Regular"), local("MTSSans-Regular"),
+    url("./fonts/MTSText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* «Голые» имена семейств, которые тоже встречаются в коде */
+@font-face {
+  font-family: "MTS Wide";
+  src: local("MTS Wide Regular"), local("MTSWide-Regular"),
+    url("./fonts/MTSWide-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS Compact";
+  src: local("MTS Compact Regular"), local("MTSCompact-Regular"),
+    url("./fonts/MTSCompact-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "MTS_Compact:Regular";
+  src: local("MTS Compact Regular"), local("MTSCompact-Regular"), local("MTS Compact");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS_Compact:Medium";
+  src: local("MTS Compact Medium"), local("MTSCompact-Medium"), local("MTS Compact");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS_Wide:Medium";
+  src: local("MTS Wide Medium"), local("MTSWide-Medium"), local("MTS Wide");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS_Wide:Bold";
+  src: local("MTS Wide Bold"), local("MTSWide-Bold"), local("MTS Wide");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MTS_Sans:Regular";
+  src: local("MTS Sans Regular"), local("MTSSans-Regular"), local("MTS Sans");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
