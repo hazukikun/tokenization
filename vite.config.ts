@@ -16,7 +16,11 @@ function figmaAssetResolver() {
   }
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // GitHub Pages serves this repo at https://<user>.github.io/tokenization/,
+  // so production asset paths must be prefixed with the repo name. Local dev
+  // (`npm run dev`) keeps serving from the root.
+  base: command === 'build' ? '/tokenization/' : '/',
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
@@ -33,4 +37,4 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
-})
+}))
